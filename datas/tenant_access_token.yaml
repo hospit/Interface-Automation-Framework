@@ -6,6 +6,6 @@ token01:
   headers: {'Content-Type': 'application/json; charset=utf-8'}
   requestType: json
   json:
-    app_id: "cli_a22dba4702fa1013"
-    app_secret: "pGAwj1fOMBG8jJaRq7cb4didyZQedeak"
+    app_id: ""
+    app_secret: ""
 

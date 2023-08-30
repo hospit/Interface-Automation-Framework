@@ -9,7 +9,7 @@ DumpImage01:
   }
   requestType: json
   json:
-    original_url: "https://p1-lark-subs.feishucdn.com/tos-cn-i-21qjs0gem7/4cf5a401ed394debad46e5092cdb281e~tplv-21qjs0gem7-jpg.image"
+    original_url: ""
   # 是否有依赖数据
   dependence_case: True
   # 依赖的数据

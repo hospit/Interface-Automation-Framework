@@ -69,54 +69,9 @@ class AassertCode(AssertDataProcessing):
             self.assert_data = i
             super().assert_hanlder()
 
-    # def assert_data_list(self):
-    #     assert_list = []
-    #     for k, v in self.assert_data.items():
-    #         if k == "status_code":
-    #             assert self.status_code == v, "响应状态码断言失败"
-    #         else:
-    #             assert_list.append(v)
-    #     return assert_list
-    #
-    # def assert_type_handle(self):
-    #     self.get_assert_data()
-    #     for i in self.assert_data_list():
-    #         self.assert_data = i
-    #         super().assert_hanlder()
-
 
 if __name__ == "__main__":
-    """
-    需要传入data：
-    yaml文件中 assert 数据
-        {assert:{
-              # 断言接口状态码
-              errorCode:{
-                        jsonpath: $.errorCode
-                        type: ==
-                        value: 0
-                        AssertType:
-                        }
-              status_code: 200
-              }
-        }
-    响应data
-        res.data
-    响应状态码
-        res.status_code
-        用来前置断言 响应状态是否 符合预期
-    响应体
-        request_data=res.body
-        如何处理 res.body
-        什么情况下 需要 body
-    响应数据
-        response_data=res.response_data
-        如何处理 res.body
-        什么情况下 需要 body
-
-    """
     ass = {
-
         # # 断言接口状态码
         # 'errorCode': {
         #         'jsonpath': '$.errorCode',

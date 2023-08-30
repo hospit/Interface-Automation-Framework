@@ -1,15 +1,4 @@
 
-#fileupload01:
-#  host: https://open.feishu.cn
-#  path: /open-apis/im/v1/images
-#  method: POST
-#  headers: {'Authorization': 'Bearer t-g1046aeb3EZJYWFLPDHQZIJV2A6ASQ6GWJBKLEYT'}
-#  requestType: file
-#  data:
-#    file:
-#      image: /Users/alvis/Pictures/My_photo/8k/2ccfd943f36b27bdaa6659cc3872b75a.jpg
-#    data:
-#      image_type: message
 
 fileupload01:
   host: ${{feishu()}}

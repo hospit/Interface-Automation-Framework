@@ -40,24 +40,6 @@ class YamlControl:
         将 host 和 path 合并，成url
         data = GetYamlData(self.file_path).get_yaml_data()
         """
-        # data = self.data
-        # data = self.regular()
-        """
-        case_list = []
-        for i in data:
-            for key, values in i.items():
-                case_dict = {}
-                # 公共配置中的数据，与用例数据不同，需要单独处理
-                case_date = {
-                    "url": values.get("host") + values.get("path"),
-                    'metho': values.get('method'),
-                    'headers': values.get('headers'),
-                    'params': values.get('params')
-                }
-                case_dict[key] = case_date
-                case_list.append(case_dict)
-        """
-
         _case_dict = []
         for i in data:
             for key, values in i.items():
