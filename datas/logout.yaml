@@ -1,0 +1,16 @@
+
+logout01:
+  host: ${{host()}}
+  path: /user/logout/json
+  method: get
+  headers:
+  params:
+#    username: pytest
+#    password: pypassword
+
+#logout02:
+#  host: https://www.wanandroid.com
+#  path: /user/logout/json
+#  method: get
+#  headers:
+#  params:

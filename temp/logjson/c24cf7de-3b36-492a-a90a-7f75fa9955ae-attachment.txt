@@ -1,0 +1,8 @@
+INFO     /Users/alvis/Code_Library/pythonProject/logs/debug-2023-08-27.log:requests_tool.py:76 
+请求状态：200 
+请求地址：https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal 
+请求方法：POST 
+ 请求头{'User-Agent': 'python-requests/2.29.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '84'}, 
+ 请求bodyNone
+请求参数：(None, {'app_id': 'cli_a22dba4702fa1013', 'app_secret': 'pGAwj1fOMBG8jJaRq7cb4didyZQedeak'}) 
+响应结果：{"code":0,"expire":7092,"msg":"ok","tenant_access_token":"t-g1048rheODKCUEGJ6JHYCHTVV7MCWNIYW6KAQYSP"}

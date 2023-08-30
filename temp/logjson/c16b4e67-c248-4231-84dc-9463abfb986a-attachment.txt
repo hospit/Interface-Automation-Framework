@@ -1,0 +1,16 @@
+INFO     /Users/alvis/Code_Library/pythonProject/logs/debug-2023-08-27.log:requests_tool.py:76 
+请求状态：200 
+请求地址：https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal 
+请求方法：POST 
+ 请求头{'User-Agent': 'python-requests/2.29.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '84'}, 
+ 请求bodyNone
+请求参数：(None, {'app_id': 'cli_a22dba4702fa1013', 'app_secret': 'pGAwj1fOMBG8jJaRq7cb4didyZQedeak'}) 
+响应结果：{"code":0,"expire":6096,"msg":"ok","tenant_access_token":"t-g1048rheODKCUEGJ6JHYCHTVV7MCWNIYW6KAQYSP"}
+INFO     /Users/alvis/Code_Library/pythonProject/logs/debug-2023-08-27.log:requests_tool.py:76 
+请求状态：200 
+请求地址：https://open.feishu.cn/open-apis/subscriptions/v1/accounts/6994262711681007620/messages 
+请求方法：POST 
+ 请求头{'User-Agent': 'python-requests/2.29.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer t-g1048rheODKCUEGJ6JHYCHTVV7MCWNIYW6KAQYSP', 'Content-Type': 'multipart/form-data; boundary=---7MA4YWxkTrZu0gW', 'Content-Length': '1125'}, 
+ 请求bodyNone
+请求参数：(None, {'articles': [{'title': '每日飞书小知识2345', 'cover': {'origin_cover': 'https://p1-lark-subs.feishucdn.com/tos-cn-i-21qjs0gem7/4cf5a401ed394debad46e5092cdb281e~tplv-21qjs0gem7-jpg.image', 'message_cover': 'https://p1-lark-subs.feishucdn.com/tos-cn-i-21qjs0gem7/4cf5a401ed394debad46e5092cdb281e~tplv-21qjs0gem7-jpg.image', 'article_cover': 'https://p1-lark-subs.feishucdn.com/tos-cn-i-21qjs0gem7/4cf5a401ed394debad46e5092cdb281e~tplv-21qjs0gem7-jpg.image'}, 'content': '<p>content here</p>', 'external_link_url': 'https://www.sample.cn', 'article_type': 1, 'content_source_url': 'www.sample.com', 'author': '飞书小助手', 'i18n_title': {'zh_cn': 'API中文内容', 'en_us': '英文内容', 'ja_jp': '日本語の内容'}, 'i18n_content': {'zh_cn': '123456中文内容', 'en_us': '英文内容', 'ja_jp': '日本語の内容'}, 'article_config': {'allow_comment': True, 'allow_forward': True, 'share_type': 1, 'comment_display_type': 1}, 'digest': '这里是内容摘要'}]}) 
+响应结果：{"code":0,"data":{"article_ids":["7271923138782543900"],"message_id":"7271923138782511132"},"msg":""}

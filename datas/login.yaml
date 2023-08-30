@@ -1,0 +1,25 @@
+
+
+login01:
+  host: ${{host()}}
+  path: /user/login
+  method: POST
+  headers:
+  params:
+    username: pytest
+    password: pypassword
+  requestType:
+
+
+
+
+login02:
+  host: ${{host()}}
+  path: /user/login
+  method: POST
+  headers:
+  params:
+    username: pytest2
+    password: pypassword
+  requestType:
+

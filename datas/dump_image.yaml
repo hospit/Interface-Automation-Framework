@@ -1,0 +1,29 @@
+
+DumpImage01:
+  host: ${{feishu()}}
+  path: /open-apis/subscriptions/v1/images/transfer
+  method: POST
+  headers: {
+    'Authorization': 'Bearer $cache{token}',
+    'Content-Type': 'multipart/form-data; boundary=---7MA4YWxkTrZu0gW'
+  }
+  requestType: json
+  json:
+    original_url: "https://p1-lark-subs.feishucdn.com/tos-cn-i-21qjs0gem7/4cf5a401ed394debad46e5092cdb281e~tplv-21qjs0gem7-jpg.image"
+  # 是否有依赖数据
+  dependence_case: True
+  # 依赖的数据
+  dependence_case_data:
+    - case_id: token01
+      dependent_data:
+        - dependent_type: response
+          jsonpath: $.tenant_access_token
+          set_cache: token
+  assert:
+    assert_data01:
+      jsonpath: $.code
+      type: ==
+      value: 0
+
+    status_code: 200
+
